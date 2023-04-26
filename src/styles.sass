@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+.app-loading.is-visible
+    opacity: 1
+    visibility: visible
+    cursor: progress
+    transition: none
+
+.app-loading-container
+    position: absolute
+    top: calc(52% + 8px)
+    left: 50%
+    font-size: 0
+    transform: translateX(-50%)
+
+.app-loading-spinner
+    display: inline-black
+    height: 8px
+    width: 8px
+    margin-left: 3px
+    margin-right: 3px
+    background-color: #2282c1
+    border-radius: 50%
+    vertical-align: top
+    transform: scale(0)
+
+.app-loading-spinner--one
+    animation: loading-spinner 2s infinite
+
+.app-loading-spinner--two
+    animation: loading-spinner 2s infinite .2s
+
+.app-loading-spinner--three
+    animation: loading-spinner 2s infinite .4s
+
+.app-loading-text
+    display: none
+
+.app-product-title
+    position: absolute
+    top: calc(50% - 36px)
+    left: 50%
+    margin-top: 0 !important
+    margin-bottom: 0 !important
+    line-height: 1 !important
+    font-weight: bold !important
+    font-size: 36px !important
+    font-family: Arial, sans-serif !important
+    transform: translateX(-50%)
+    transition: transform .35s ease
+
+.app-product-scope
+    color: #2282c1
+    font-size: 22px
+
+.app-product-name
+    color: #666
+    font-size: 22px
+
+.app-loading
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    display: block
+    text-align: center
+    cursor: inherit
+    z-index: 100
+    background-color: #F4F3F2
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    opacity: 0
+    visibility: hidden
+    transition: opacity .35s ease, height 0s linear .35s, width 02 linear .35s, visibility 0s linear .35s

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Project</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <style>
+    @keyframes loading-spinner {
+      0% {
+        transform: scale(0);
+      }
+      20% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+
+  <div class="app-loading is-visible">
+    <h1 class="app-product-title">
+      <span class="app-product-scope">Angular</span><span class="app-product-name">Project</span>
+    </h1>
+    <div class="app-loading-container">
+      <div class="app-loading-text">loading...</div>
+      <div class="app-loading-spinner app-loading-spinner--one"></div>
+      <div class="app-loading-spinner app-loading-spinner--two"></div>
+      <div class="app-loading-spinner app-loading-spinner--three"></div>
+    </div>
+  </div>
+</body>
+</html>
